@@ -10,8 +10,8 @@ public class App {
         System.out.println("sending");
         String message = "Hello, there";
         String subject = "CodersArea : confirmation";
-        String to = "upratham07@gmail.com";
-        String from = "fissionyt.org@gmail.com";
+        String to = "Receiver emailID";
+        String from = "Sender emailID";
 
         sendEmail(message,subject,to,from);
     }
@@ -28,7 +28,7 @@ public class App {
         Session session = Session.getInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("prathamtestmail07@gmail.com", "tppijgqdjtsgxrvn");
+                return new PasswordAuthentication("EmailId", "EmailId password");
             }
 
         });
